@@ -1,0 +1,14 @@
+
+<ul>
+  <li class="card mt-2 p-2 bg-primary" style="list-style: none;" *ngFor="let post of posts |async">
+
+    <a [routerLink]="post.route">
+      <h1 class="text-white">
+        {{post.title}}
+
+      </h1>
+       <p class="text-white">{{post.description}}</p>
+    </a>
+
+  </li>
+</ul>
